@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="580" viewBox="0 0 1600 580" role="img" aria-labelledby="title desc">
+<title id="title">Customer message workflow — local demo</title>
+<desc id="desc">Receive a message, authenticate the shared key, validate the JSON, classify and prioritize using demo rules, choose a department, and preview a simulated notification. Wrong keys are rejected with 401. Invalid requests return 400 or 413. No external provider is contacted by the demo.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#006B65"/></marker></defs>
+<rect width="1600" height="580" rx="22" fill="#F4F7F6"/>
+<text x="50" y="58" fill="#006B65" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="700">WORKFLOW ILLUSTRATION / LOCAL DEMO</text>
+<text x="50" y="121" fill="#172C36" font-family="DejaVu Sans,Arial,sans-serif" font-size="44" font-weight="700">From incoming request to a reviewable handoff.</text>
+<rect x="50" y="189" width="228" height="191" rx="18" fill="white" stroke="#D9E3E1" stroke-width="2"/>
+<circle cx="81" cy="222" r="17" fill="#DCEFEB"/>
+<text x="75" y="229" fill="#006B65" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700">1</text>
+<text x="68" y="275" fill="#172C36" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700">Receive</text>
+<text x="68" y="317" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">POST /message</text>
+<text x="68" y="347" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Fictional JSON</text>
+<path d="M283 285 L292 285" stroke="#006B65" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="298" y="189" width="228" height="191" rx="18" fill="white" stroke="#D9E3E1" stroke-width="2"/>
+<circle cx="329" cy="222" r="17" fill="#DCEFEB"/>
+<text x="323" y="229" fill="#006B65" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700">2</text>
+<text x="316" y="275" fill="#172C36" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700">Authenticate</text>
+<text x="316" y="317" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Shared API key</text>
+<text x="316" y="347" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Required for intake</text>
+<path d="M531 285 L540 285" stroke="#006B65" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="546" y="189" width="228" height="191" rx="18" fill="white" stroke="#D9E3E1" stroke-width="2"/>
+<circle cx="577" cy="222" r="17" fill="#DCEFEB"/>
+<text x="571" y="229" fill="#006B65" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700">3</text>
+<text x="564" y="275" fill="#172C36" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700">Validate</text>
+<text x="564" y="317" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Required fields</text>
+<text x="564" y="347" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">32 KiB body limit</text>
+<path d="M779 285 L788 285" stroke="#006B65" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="794" y="189" width="228" height="191" rx="18" fill="white" stroke="#D9E3E1" stroke-width="2"/>
+<circle cx="825" cy="222" r="17" fill="#DCEFEB"/>
+<text x="819" y="229" fill="#006B65" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700">4</text>
+<text x="812" y="275" fill="#172C36" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700">Classify</text>
+<text x="812" y="317" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Category + priority</text>
+<text x="812" y="347" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Local keyword rules</text>
+<path d="M1027 285 L1036 285" stroke="#006B65" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1042" y="189" width="228" height="191" rx="18" fill="white" stroke="#D9E3E1" stroke-width="2"/>
+<circle cx="1073" cy="222" r="17" fill="#DCEFEB"/>
+<text x="1067" y="229" fill="#006B65" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700">5</text>
+<text x="1060" y="275" fill="#172C36" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700">Route</text>
+<text x="1060" y="317" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Approved service</text>
+<text x="1060" y="347" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Fictional destination</text>
+<path d="M1275 285 L1284 285" stroke="#006B65" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1290" y="189" width="228" height="191" rx="18" fill="white" stroke="#D9E3E1" stroke-width="2"/>
+<circle cx="1321" cy="222" r="17" fill="#DCEFEB"/>
+<text x="1315" y="229" fill="#006B65" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700">6</text>
+<text x="1308" y="275" fill="#172C36" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700">Preview</text>
+<text x="1308" y="317" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">Status: simulated</text>
+<text x="1308" y="347" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400">No SMTP submission</text>
+<text x="298" y="426" fill="#8E4A18" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="700">Wrong key → 401</text>
+<text x="546" y="426" fill="#8E4A18" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="700">Invalid → 400 / 413</text>
+<text x="50" y="502" fill="#52666E" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400">Configuration is checked before processing. Destinations stay under application control.</text>
+<text x="50" y="547" fill="#8E4A18" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400">Live OpenAI analysis and Gmail submission require separate authorization and validation.</text>
+</svg>

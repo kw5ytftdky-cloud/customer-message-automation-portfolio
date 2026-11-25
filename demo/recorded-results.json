@@ -1,0 +1,105 @@
+[
+  {
+    "scenario": "cle_incorrecte",
+    "http_status": 401,
+    "response": {
+      "error": "Unauthorised access."
+    }
+  },
+  {
+    "scenario": "devis",
+    "http_status": 200,
+    "response": {
+      "Email": "client.demo.a@example.com",
+      "Message": {
+        "action": "Answer with the tariff information",
+        "category": "price",
+        "priority": "low",
+        "resume": "Simulation locale par mots-clés : Bonjour, je souhaite un devis pour votre prestation."
+      },
+      "Name": "Client Démo A",
+      "analysis_source": "local_rules_demo",
+      "mode": "demo",
+      "notification": {
+        "delivery_confirmed": false,
+        "preview": "NEW CLIENT REQUEST\nName: Client Démo A\nEmail: client.demo.a@example.com\nOriginal message: Bonjour, je souhaite un devis pour votre prestation.\nCategory: price\nPriority: low\nResume: Simulation locale par mots-clés : Bonjour, je souhaite un devis pour votre prestation.\nRecommended action: Answer with the tariff information",
+        "smtp_submitted": false,
+        "status": "simulated",
+        "subject": "New client request - price - Priority low"
+      },
+      "recipient": "commercial@example.com"
+    }
+  },
+  {
+    "scenario": "commande_urgente",
+    "http_status": 200,
+    "response": {
+      "Email": "client.demo.b@example.com",
+      "Message": {
+        "action": "Transfer to the order department immediately",
+        "category": "order",
+        "priority": "high",
+        "resume": "Simulation locale par mots-clés : URGENT : ma commande est bloquée, pouvez-vous vérifier la livraison ?"
+      },
+      "Name": "Client Démo B",
+      "analysis_source": "local_rules_demo",
+      "mode": "demo",
+      "notification": {
+        "delivery_confirmed": false,
+        "preview": "NEW CLIENT REQUEST\nName: Client Démo B\nEmail: client.demo.b@example.com\nOriginal message: URGENT : ma commande est bloquée, pouvez-vous vérifier la livraison ?\nCategory: order\nPriority: high\nResume: Simulation locale par mots-clés : URGENT : ma commande est bloquée, pouvez-vous vérifier la livraison ?\nRecommended action: Transfer to the order department immediately",
+        "smtp_submitted": false,
+        "status": "simulated",
+        "subject": "New client request - order - Priority high"
+      },
+      "recipient": "orders@example.com"
+    }
+  },
+  {
+    "scenario": "facturation",
+    "http_status": 200,
+    "response": {
+      "Email": "client.demo.c@example.com",
+      "Message": {
+        "action": "Transfer to the facturation department",
+        "category": "facturation",
+        "priority": "mid",
+        "resume": "Simulation locale par mots-clés : Bonjour, ma facture comporte une erreur."
+      },
+      "Name": "Client Démo C",
+      "analysis_source": "local_rules_demo",
+      "mode": "demo",
+      "notification": {
+        "delivery_confirmed": false,
+        "preview": "NEW CLIENT REQUEST\nName: Client Démo C\nEmail: client.demo.c@example.com\nOriginal message: Bonjour, ma facture comporte une erreur.\nCategory: facturation\nPriority: mid\nResume: Simulation locale par mots-clés : Bonjour, ma facture comporte une erreur.\nRecommended action: Transfer to the facturation department",
+        "smtp_submitted": false,
+        "status": "simulated",
+        "subject": "New client request - facturation - Priority mid"
+      },
+      "recipient": "facturation@example.com"
+    }
+  },
+  {
+    "scenario": "support_urgent",
+    "http_status": 200,
+    "response": {
+      "Email": "client.demo.d@example.com",
+      "Message": {
+        "action": "Transfer to the technical support immediately",
+        "category": "support",
+        "priority": "high",
+        "resume": "Simulation locale par mots-clés : Panne critique : notre accès au service est bloqué."
+      },
+      "Name": "Client Démo D",
+      "analysis_source": "local_rules_demo",
+      "mode": "demo",
+      "notification": {
+        "delivery_confirmed": false,
+        "preview": "NEW CLIENT REQUEST\nName: Client Démo D\nEmail: client.demo.d@example.com\nOriginal message: Panne critique : notre accès au service est bloqué.\nCategory: support\nPriority: high\nResume: Simulation locale par mots-clés : Panne critique : notre accès au service est bloqué.\nRecommended action: Transfer to the technical support immediately",
+        "smtp_submitted": false,
+        "status": "simulated",
+        "subject": "New client request - support - Priority high"
+      },
+      "recipient": "support@example.com"
+    }
+  }
+]

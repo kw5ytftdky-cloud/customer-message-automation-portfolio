@@ -1,0 +1,34 @@
+[
+  {
+    "scenario": "devis",
+    "request": {
+      "name": "Client Démo A",
+      "email": "client.demo.a@example.com",
+      "message": "Bonjour, je souhaite un devis pour votre prestation."
+    }
+  },
+  {
+    "scenario": "commande_urgente",
+    "request": {
+      "name": "Client Démo B",
+      "email": "client.demo.b@example.com",
+      "message": "URGENT : ma commande est bloquée, pouvez-vous vérifier la livraison ?"
+    }
+  },
+  {
+    "scenario": "facturation",
+    "request": {
+      "name": "Client Démo C",
+      "email": "client.demo.c@example.com",
+      "message": "Bonjour, ma facture comporte une erreur."
+    }
+  },
+  {
+    "scenario": "support_urgent",
+    "request": {
+      "name": "Client Démo D",
+      "email": "client.demo.d@example.com",
+      "message": "Panne critique : notre accès au service est bloqué."
+    }
+  }
+]
